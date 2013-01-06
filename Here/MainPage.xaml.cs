@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Приложение для чтения блога "Здесь в..." Автор блога Стас Кулеш
+
+using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Net;
