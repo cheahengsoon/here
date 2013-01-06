@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="Here.ASplashScreen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="800" d:DesignWidth="480">
+
+    <Grid x:Name="LayoutRoot" Height="800" Width="480">
+        <Image Source="SplashScreen.jpg" x:Name="logoName" Stretch="None">
+
+            <Image.Projection>
+                <PlaneProjection/>
+            </Image.Projection>
+        </Image>
+        <ProgressBar IsIndeterminate="True" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock Text="Пожалуйста, подождите..." FontSize="22" Margin="8,0,-8,348" Height="32" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="300" Foreground="White"/>
+
+    </Grid>
+
+
+    <UserControl.Resources>
+        <Storyboard x:Key="flippingAnimation">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)"
+                                           Storyboard.TargetName="logoName">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+</UserControl>
+    
+    

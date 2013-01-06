@@ -1,0 +1,99 @@
+c:\users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\Bin\Debug\ApplicationIcon.png
+c:\users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\Bin\Debug\Here.dll
+c:\users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\Bin\Debug\Here.pdb
+c:\users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\Bin\Debug\AppManifest.xaml
+c:\users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\Bin\Debug\Here.xap
+c:\users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\Bin\Debug\Microsoft.Phone.Controls.dll
+c:\users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\Bin\Debug\Microsoft.Phone.Controls.xml
+c:\users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\obj\Debug\App.g.i.cs
+c:\users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\obj\Debug\MainPage.g.i.cs
+c:\users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\obj\Debug\Here.g.resources
+c:\users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\obj\Debug\Here.dll
+c:\users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\obj\Debug\Here.pdb
+c:\users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\obj\Debug\XapCacheFile.xml
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\ApplicationIcon.png
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\Background.png
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\Here.dll
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\Here.pdb
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\AppManifest.xaml
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\Here.xap
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\obj\Debug\App.g.i.cs
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\obj\Debug\MainPage.g.i.cs
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\obj\Debug\Here.g.resources
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\obj\Debug\Here.dll
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\obj\Debug\Here.pdb
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\obj\Debug\XapCacheFile.xml
+C:\Users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\obj\Debug\Here.csprojResolveAssemblyReference.cache
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\obj\Debug\Read.g.i.cs
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.favs.addto.rest.png
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.favs.rest.png
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.check.rest.png
+C:\Users\1\SkyDrive\Here\Here\Bin\Debug\icons\appbar.check.rest.png
+C:\Users\1\SkyDrive\Here\Here\Bin\Debug\icons\appbar.favs.addto.rest.png
+C:\Users\1\SkyDrive\Here\Here\Bin\Debug\icons\appbar.favs.rest.png
+C:\Users\1\SkyDrive\Here\Here\Bin\Debug\ApplicationIcon.png
+C:\Users\1\SkyDrive\Here\Here\Bin\Debug\Background.png
+C:\Users\1\SkyDrive\Here\Here\Bin\Debug\Here.dll
+C:\Users\1\SkyDrive\Here\Here\Bin\Debug\Here.pdb
+C:\Users\1\SkyDrive\Here\Here\Bin\Debug\AppManifest.xaml
+C:\Users\1\SkyDrive\Here\Here\Bin\Debug\Here.xap
+C:\Users\1\SkyDrive\Here\Here\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\1\SkyDrive\Here\Here\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\1\SkyDrive\Here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\1\SkyDrive\Here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\1\SkyDrive\Here\Here\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\1\SkyDrive\Here\Here\obj\Debug\App.g.i.cs
+C:\Users\1\SkyDrive\Here\Here\obj\Debug\MainPage.g.i.cs
+C:\Users\1\SkyDrive\Here\Here\obj\Debug\Read.g.i.cs
+C:\Users\1\SkyDrive\Here\Here\obj\Debug\Here.g.resources
+C:\Users\1\SkyDrive\Here\Here\obj\Debug\Here.dll
+C:\Users\1\SkyDrive\Here\Here\obj\Debug\Here.pdb
+C:\Users\1\SkyDrive\Here\Here\obj\Debug\XapCacheFile.xml
+C:\Users\1\SkyDrive\Here\Here\Bin\Debug\icons\appbar.download.rest.png
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.check.rest.png
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.download.rest.png
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.favs.addto.rest.png
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.favs.rest.png
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\obj\Debug\Read.g.i.cs
+C:\Users\1\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.download.rest.png
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\obj\Debug\Photo.g.i.cs
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.save.rest.png
+C:\Users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\obj\Debug\ASplashScreen.g.i.cs
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.feature.search.rest.png
+C:\Users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.facebook.heart.png
+C:\Users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.tiles.four.png
+C:\Users\usanov_aa\documents\visual studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.share.rest.png
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\Bin\Debug\ApplicationIcon.png
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\Bin\Debug\Here.dll
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\Bin\Debug\Here.pdb
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\Bin\Debug\AppManifest.xaml
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\Bin\Debug\Here.xap
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\obj\Debug\Here.csprojResolveAssemblyReference.cache
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\obj\Debug\App.g.cs
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\obj\Debug\ASplashScreen.g.cs
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\obj\Debug\MainPage.g.cs
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\obj\Debug\Photo.g.cs
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\obj\Debug\Read.g.cs
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\obj\Debug\Here.g.resources
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\obj\Debug\Here.dll
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\obj\Debug\Here.pdb
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\obj\Debug\XapCacheFile.xml
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\Bin\Debug\HereTask.dll
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\Here\Bin\Debug\HereTask.pdb
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\HereTask.dll
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\HereTask.pdb
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.os.windows.8.png
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.thumbs.up.png
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.refresh.rest.png

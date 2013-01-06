@@ -1,0 +1,9 @@
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\HereTask\Bin\Release\HereTask.dll
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\HereTask\Bin\Release\HereTask.pdb
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\HereTask\obj\Release\HereTask.dll
+C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\HereTask\obj\Release\HereTask.pdb
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\HereTask\Bin\Release\HereTask.dll
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\HereTask\Bin\Release\HereTask.pdb
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\HereTask\obj\Release\HereTask.csprojResolveAssemblyReference.cache
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\HereTask\obj\Release\HereTask.dll
+C:\Users\Алексей\Documents\Visual Studio 2012\Projects\Here\HereTask\obj\Release\HereTask.pdb
