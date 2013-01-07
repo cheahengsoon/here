@@ -1,6 +1,4 @@
-﻿//Приложение для чтения блога "Здесь в..." Автор блога Стас Кулеш
-
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Net;
@@ -18,21 +16,7 @@ namespace Here
     public partial class MainPage : PhoneApplicationPage
     {
 
-        public const string RSS = "http://feeds.feedburner.com/kulesh?format=xml";
-        public const string FLICKR = "http://api.flickr.com/services/feeds/geo/?id=65129513@N00&lang=en-us&format=rss_200";
-
-        string error_network = "Произошла ошибка! Проверьте доступность интернета и попробуйте ещё раз";
-        string Task_description = "Here Task";
-        string Tile_title = "Здесь в...";
-        string Email_subject = "Отзыв о \"Здесь в...\" для WP";
-        string Email_to = "sunrizz@outlook.com";
-
-        string google_str = "https://plus.google.com/u/0/118010450346942959031/";
-        string youtube_str = "http://www.youtube.com/user/kulyesh";
-        string facebook_str = "http://facebook.com/kulesh";
-        string twitter_str = "http://twitter.com/stas_kulesh";
-        string linkedin_str = "http://nz.linkedin.com/in/staskulesh";
-
+        StringConst Strcons = new StringConst();
         BackgroundWorker backroundWorker;
         bool isPageNew;
         Popup myPopup;
@@ -51,9 +35,10 @@ namespace Here
         //загрузка xml и парсинг
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            PeriodicTask periodicTask = new PeriodicTask(Task_description)
+            PeriodicTask periodicTask = new PeriodicTask(Strcons.Task_description)
+        //   PeriodicTask periodicTask = new PeriodicTask(Task_description)
         {
-            Description = Task_description
+            Description = Strcons.Task_description
         };
             try
             {
@@ -69,7 +54,7 @@ namespace Here
                 WebClient client = new WebClient();
                 client.DownloadStringCompleted += new
                 DownloadStringCompletedEventHandler(client_DownloadStringCompleted);
-                client.DownloadStringAsync(new Uri(RSS));
+                client.DownloadStringAsync(new Uri(Strcons.RSS));
                 isPageNew = false;
             }
 
@@ -83,7 +68,7 @@ namespace Here
             }
             else
             {
-                MessageBox.Show(error_network);
+                MessageBox.Show(Strcons.error_network);
                 NavigationService.GoBack();
             }
         }
@@ -112,7 +97,7 @@ namespace Here
             WebClient client = new WebClient();
             client.DownloadStringCompleted += new
             DownloadStringCompletedEventHandler(flickr_DownloadStringCompleted);
-            client.DownloadStringAsync(new Uri(FLICKR));
+            client.DownloadStringAsync(new Uri(Strcons.FLICKR));
         }
 
         void flickr_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
@@ -155,7 +140,7 @@ namespace Here
         {
             var apptile = ShellTile.ActiveTiles.First();
             var appTileData = new StandardTileData();
-            appTileData.Title = Tile_title;
+            appTileData.Title = Strcons.Tile_title;
             appTileData.BackgroundImage = new Uri("/stas-kulesh-app-icon.png", UriKind.RelativeOrAbsolute);
             apptile.Update(appTileData);
         }
@@ -165,17 +150,17 @@ namespace Here
         private void SocTap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             WebBrowserTask cvtap = new WebBrowserTask();
-            if (sender == google)            
-                cvtap.Uri = new Uri(google_str, UriKind.Absolute);            
+            if (sender == google)
+                cvtap.Uri = new Uri(Strcons.google_str, UriKind.Absolute);
             else if (sender == youtube)
-                cvtap.Uri = new Uri(youtube_str, UriKind.Absolute);
+                cvtap.Uri = new Uri(Strcons.youtube_str, UriKind.Absolute);
             else if (sender == facebook)
-                cvtap.Uri = new Uri(facebook_str, UriKind.Absolute);
+                cvtap.Uri = new Uri(Strcons.facebook_str, UriKind.Absolute);
             else if (sender == twitter)
-                cvtap.Uri = new Uri(twitter_str, UriKind.Absolute);
+                cvtap.Uri = new Uri(Strcons.twitter_str, UriKind.Absolute);
             else if (sender == linkedin)
             {
-                cvtap.Uri = new Uri(linkedin_str, UriKind.Absolute);
+                cvtap.Uri = new Uri(Strcons.linkedin_str, UriKind.Absolute);
             }
             cvtap.Show();
         }
@@ -214,8 +199,8 @@ namespace Here
         private void textBox20_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             EmailComposeTask ectask = new EmailComposeTask();
-            ectask.Subject = Email_subject;
-            ectask.To = Email_to;
+            ectask.Subject = Strcons.Email_subject;
+            ectask.To = Strcons.Email_to;
             ectask.Show();
         }
         //Кнопка - "Оценить"
@@ -225,9 +210,6 @@ namespace Here
             cvtap.Uri = new Uri("http://www.windowsphone.com/ru-ru/store/app/here/6eb87263-c07e-407a-b8f8-f0b19e241ada", UriKind.Absolute);
             cvtap.Show();
         }
-
-
-
 
     }
 }

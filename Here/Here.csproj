@@ -93,6 +93,7 @@
     <Compile Include="Read.xaml.cs">
       <DependentUpon>Read.xaml</DependentUpon>
     </Compile>
+    <Compile Include="StringConst.cs" />
     <Compile Include="TiltEffect.cs" />
     <Compile Include="ViewModels\ItemViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
