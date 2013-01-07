@@ -16,5 +16,7 @@
         public string facebook_str = "http://facebook.com/kulesh";
         public string twitter_str = "http://twitter.com/stas_kulesh";
         public string linkedin_str = "http://nz.linkedin.com/in/staskulesh";
+        public string sklink = "http://staskulesh.com";
+        public string ratestr = "http://www.windowsphone.com/ru-ru/store/app/here/6eb87263-c07e-407a-b8f8-f0b19e241ada";
     }
 }

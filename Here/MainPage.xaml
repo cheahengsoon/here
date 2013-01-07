@@ -99,7 +99,7 @@
 
             <controls:PanoramaItem Header="Что это?" Width="440" Foreground="White">
                 <StackPanel Height="576" Margin="-4,22,10,22" Width="440" >
-                    <TextBlock Foreground="White" Height="75" Margin="12,0,12,0" Name="textBox6" Text="staskulesh.com" Width="403" FontSize="60" HorizontalAlignment="Center" Tap="textBox6_Tap" local:ListAnimation.AnimationLevel="3"/>
+                    <TextBlock Foreground="White" Height="75" Margin="12,0,12,0" Name="staskulesh" Text="staskulesh.com" Width="403" FontSize="60" HorizontalAlignment="Center" Tap="SocTap" local:ListAnimation.AnimationLevel="3"/>
                     <TextBlock Text="" Height="142" Margin="12,0,12,0" Name="textBox9"  Width="400" />
 
                     <StackPanel Name="STSoc" Orientation="Horizontal" Height="50" Width="423" HorizontalAlignment="Center">
@@ -115,10 +115,10 @@
                     </StackPanel>
 
                     <TextBlock Height="110" Margin="12,0,12,0" Name="textBox7" Text="" Width="400" />
-                    <TextBlock Style="{StaticResource AboutTextBox}" Width="130" Text="Оценить!" Name="Rate" Tap="Rate_Click"/>
-                    <TextBlock Style="{StaticResource AboutTextBox}" Name="textBox5" Text="Версия: 1.5" Width="130" Tap="textBox20_Tap"/>
-                    <TextBlock Style="{StaticResource AboutTextBox}" Name="textBox20" Text="Автор блога: Стас Кулеш" Width="302" Tap="textBox20_Tap" />
-                    <TextBlock Style="{StaticResource AboutTextBox}" Name="textBox8" Text="Разработчик: Алексей Усанов" Width="370" Tap="textBox20_Tap" />
+                    <TextBlock Style="{StaticResource AboutTextBox}" Width="130" Text="Оценить!" Name="Rate" Tap="SocTap"/>
+                    <TextBlock Style="{StaticResource AboutTextBox}" Name="textBox5" Text="Версия: 1.5" Width="130" Tap="MailSend"/>
+                    <TextBlock Style="{StaticResource AboutTextBox}" Name="textBox20" Text="Автор блога: Стас Кулеш" Width="302" Tap="MailSend" />
+                    <TextBlock Style="{StaticResource AboutTextBox}" Name="textBox8" Text="Разработчик: Алексей Усанов" Width="370" Tap="MailSend" />
 
                 </StackPanel>
             </controls:PanoramaItem>

@@ -159,17 +159,13 @@ namespace Here
             else if (sender == twitter)
                 cvtap.Uri = new Uri(Strcons.twitter_str, UriKind.Absolute);
             else if (sender == linkedin)
-            {
                 cvtap.Uri = new Uri(Strcons.linkedin_str, UriKind.Absolute);
+            else if (sender == staskulesh)
+                cvtap.Uri = new Uri(Strcons.sklink, UriKind.Absolute);
+            else if (sender == Rate)
+            {
+                cvtap.Uri = new Uri(Strcons.ratestr, UriKind.Absolute);
             }
-            cvtap.Show();
-        }
-
-        //Нажатие на staskulesh.com
-        private void textBox6_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            WebBrowserTask cvtap = new WebBrowserTask();
-            cvtap.Uri = new Uri("http://staskulesh.com", UriKind.Absolute);
             cvtap.Show();
         }
 
@@ -196,20 +192,12 @@ namespace Here
             backroundWorker.RunWorkerAsync();
         }
         //Message мне
-        private void textBox20_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        private void MailSend(object sender, System.Windows.Input.GestureEventArgs e)
         {
             EmailComposeTask ectask = new EmailComposeTask();
             ectask.Subject = Strcons.Email_subject;
             ectask.To = Strcons.Email_to;
             ectask.Show();
         }
-        //Кнопка - "Оценить"
-        private void Rate_Click(object sender, RoutedEventArgs e)
-        {
-            WebBrowserTask cvtap = new WebBrowserTask();
-            cvtap.Uri = new Uri("http://www.windowsphone.com/ru-ru/store/app/here/6eb87263-c07e-407a-b8f8-f0b19e241ada", UriKind.Absolute);
-            cvtap.Show();
-        }
-
     }
 }
