@@ -15,7 +15,6 @@ namespace Here
 {
     public partial class MainPage : PhoneApplicationPage
     {
-
         StringConst Strcons = new StringConst();
         BackgroundWorker backroundWorker;
         bool isPageNew;
@@ -36,7 +35,6 @@ namespace Here
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
             PeriodicTask periodicTask = new PeriodicTask(Strcons.Task_description)
-        //   PeriodicTask periodicTask = new PeriodicTask(Task_description)
         {
             Description = Strcons.Task_description
         };
@@ -89,7 +87,6 @@ namespace Here
 
             RssAll.ItemsSource = nzpost;
             FlickrLoad();
-
         }
 
         public void FlickrLoad()
@@ -122,13 +119,7 @@ namespace Here
                                      BigImage = post.Element(ns + "content").Attribute("url").Value
                                  };
         }
-        //УРА!!!! Обращение к конкретному элементу RSSALL!!!!!  :)
-        //void LoadRss()
-        //{
-        //    string nzrss = ((PostMessage)(RssAll.Items[0])).title;
-        //    MessageBox.Show(nzrss);
-        //}
-
+        
         //открытие статьи. + передача параметров в read.xaml
         private void RssAll_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
@@ -146,7 +137,6 @@ namespace Here
         }
 
         //обработка тапов по иконкам соцсетей
-
         private void SocTap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             WebBrowserTask cvtap = new WebBrowserTask();
@@ -178,7 +168,7 @@ namespace Here
         {
             backroundWorker.DoWork += ((s, args) =>
                 {
-                    Thread.Sleep(15000);
+                    Thread.Sleep(20000);
                 });
 
             backroundWorker.RunWorkerCompleted += ((s, args) =>
