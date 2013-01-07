@@ -27,6 +27,12 @@ namespace Here
         string Email_subject = "Отзыв о \"Здесь в...\" для WP";
         string Email_to = "sunrizz@outlook.com";
 
+        string google_str = "https://plus.google.com/u/0/118010450346942959031/";
+        string youtube_str = "http://www.youtube.com/user/kulyesh";
+        string facebook_str = "http://facebook.com/kulesh";
+        string twitter_str = "http://twitter.com/stas_kulesh";
+        string linkedin_str = "http://nz.linkedin.com/in/staskulesh";
+
         BackgroundWorker backroundWorker;
         bool isPageNew;
         Popup myPopup;
@@ -101,8 +107,6 @@ namespace Here
 
         }
 
-
-
         public void FlickrLoad()
         {
             WebClient client = new WebClient();
@@ -156,38 +160,23 @@ namespace Here
             apptile.Update(appTileData);
         }
 
-
-
         //обработка тапов по иконкам соцсетей
 
-        private void google_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        private void SocTap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             WebBrowserTask cvtap = new WebBrowserTask();
-            cvtap.Uri = new Uri("https://plus.google.com/u/0/118010450346942959031/", UriKind.Absolute);
-            cvtap.Show();
-        }
-        private void youtube_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            WebBrowserTask cvtap = new WebBrowserTask();
-            cvtap.Uri = new Uri("http://www.youtube.com/user/kulyesh", UriKind.Absolute);
-            cvtap.Show();
-        }
-        private void facebook_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            WebBrowserTask cvtap = new WebBrowserTask();
-            cvtap.Uri = new Uri("http://facebook.com/kulesh", UriKind.Absolute);
-            cvtap.Show();
-        }
-        private void twitter_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            WebBrowserTask cvtap = new WebBrowserTask();
-            cvtap.Uri = new Uri("http://twitter.com/stas_kulesh", UriKind.Absolute);
-            cvtap.Show();
-        }
-        private void linkedin_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            WebBrowserTask cvtap = new WebBrowserTask();
-            cvtap.Uri = new Uri("http://nz.linkedin.com/in/staskulesh", UriKind.Absolute);
+            if (sender == google)            
+                cvtap.Uri = new Uri(google_str, UriKind.Absolute);            
+            else if (sender == youtube)
+                cvtap.Uri = new Uri(youtube_str, UriKind.Absolute);
+            else if (sender == facebook)
+                cvtap.Uri = new Uri(facebook_str, UriKind.Absolute);
+            else if (sender == twitter)
+                cvtap.Uri = new Uri(twitter_str, UriKind.Absolute);
+            else if (sender == linkedin)
+            {
+                cvtap.Uri = new Uri(linkedin_str, UriKind.Absolute);
+            }
             cvtap.Show();
         }
 

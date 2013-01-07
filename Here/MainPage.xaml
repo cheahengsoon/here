@@ -103,15 +103,15 @@
                     <TextBlock Text="" Height="142" Margin="12,0,12,0" Name="textBox9"  Width="400" />
 
                     <StackPanel Name="STSoc" Orientation="Horizontal" Height="50" Width="423" HorizontalAlignment="Center">
-                        <Image Style="{StaticResource SocImage}" Name="google" Source="/pics/google.png" Tap="google_Tap"/>
+                        <Image Style="{StaticResource SocImage}" Name="google" Source="/pics/google.png" Tap="SocTap"/>
                         <Line Style="{StaticResource CLine}"></Line>
-                        <Image Style="{StaticResource SocImage}" Name="youtube" Source="/pics/youtube.png" Tap="youtube_Tap"/>
+                        <Image Style="{StaticResource SocImage}" Name="youtube" Source="/pics/youtube.png" Tap="SocTap"/>
                         <Line Style="{StaticResource CLine}"></Line>
-                        <Image Style="{StaticResource SocImage}" Name="facebook" Source="/pics/facebook.png" Tap="facebook_Tap"/>
+                        <Image Style="{StaticResource SocImage}" Name="facebook" Source="/pics/facebook.png" Tap="SocTap"/>
                         <Line Style="{StaticResource CLine}"></Line>
-                        <Image Style="{StaticResource SocImage}" Name="twitter" Source="/pics/twitter.png" Tap="twitter_Tap"/>
+                        <Image Style="{StaticResource SocImage}" Name="twitter" Source="/pics/twitter.png" Tap="SocTap"/>
                         <Line Style="{StaticResource CLine}"></Line>
-                        <Image Style="{StaticResource SocImage}" Name="linkedin" Source="/pics/linkedin.png" Tap="linkedin_Tap"/>
+                        <Image Style="{StaticResource SocImage}" Name="linkedin" Source="/pics/linkedin.png" Tap="SocTap"/>
                     </StackPanel>
 
                     <TextBlock Height="110" Margin="12,0,12,0" Name="textBox7" Text="" Width="400" />

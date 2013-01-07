@@ -97,3 +97,24 @@ C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\Her
 C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.os.windows.8.png
 C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.thumbs.up.png
 C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\Here\Bin\Debug\icons\appbar.refresh.rest.png
+C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\ApplicationIcon.png
+C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\Here.dll
+C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\Here.pdb
+C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\AppManifest.xaml
+C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\Here.xap
+C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\HereTask.dll
+C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\HereTask.pdb
+C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\Here.csprojResolveAssemblyReference.cache
+C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\App.g.cs
+C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\ASplashScreen.g.cs
+C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\MainPage.g.cs
+C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\Photo.g.cs
+C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\Read.g.cs
+C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\Here.g.resources
+C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\Here.dll
+C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\Here.pdb
+C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\XapCacheFile.xml
