@@ -168,7 +168,7 @@ namespace Here
         {
             backroundWorker.DoWork += ((s, args) =>
                 {
-                    Thread.Sleep(20000);
+                    Thread.Sleep(10000);
                 });
 
             backroundWorker.RunWorkerCompleted += ((s, args) =>

@@ -132,7 +132,6 @@
     <Content Include="ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Background.png" />
     <Content Include="pics\facebook.png" />
     <Content Include="pics\google.png" />
     <Content Include="pics\linkedin.png" />

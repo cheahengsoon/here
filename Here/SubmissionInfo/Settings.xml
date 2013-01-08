@@ -3,4 +3,6 @@
   <LargeAppTile>stas-kulesh-app-iconlr.png</LargeAppTile>
   <PCAppTile>stas-kulesh-app-iconmarketplace.png</PCAppTile>
   <ScreenShots>MainPage.png;ReadPost.png;main8.png;;;;;;</ScreenShots>
+  <ScreenShotsWXGA>;;;;;;;;</ScreenShotsWXGA>
+  <ScreenShots720P>;;;;;;;;</ScreenShots720P>
 </MarketplaceDetails>
