@@ -13,9 +13,7 @@ namespace HereTask
         public const string RSS = "http://feeds.feedburner.com/kulesh?format=xml";
         private static volatile bool _classInitialized;
 
-        /// <remarks>
         /// ScheduledAgent constructor, initializes the UnhandledException handler
-        /// </remarks>
         public ScheduledAgent()
         {
             if (!_classInitialized)
@@ -44,18 +42,11 @@ namespace HereTask
             try
             {
                 WebClient nzRSS = new WebClient();
-                //nzRSS.DownloadStringCompleted += new DownloadStringCompletedEventHandler(nzRSS_DSC);
                 nzRSS.DownloadStringAsync(new Uri(RSS));
                 nzRSS.DownloadStringCompleted += new DownloadStringCompletedEventHandler(nzRSS_DSC);
             }
             catch
             {
-                var tile = ShellTile.ActiveTiles.First();
-                var apptile = new StandardTileData();
-                apptile.Title = "Здесь в...";
-                apptile.BackgroundImage = new Uri("/stas-kulesh-app-icon.png", UriKind.RelativeOrAbsolute);
-                apptile.BackContent = " ";
-                tile.Update(apptile);
             }
         }
 
@@ -84,8 +75,7 @@ namespace HereTask
             }
             finally
             {
-                //      ScheduledActionService.LaunchForTest(task.Name, TimeSpan.FromSeconds(10));
-                NotifyComplete();
+               NotifyComplete();
             }
         }
 

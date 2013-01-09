@@ -17,7 +17,7 @@
 
         <ProgressBar Height="30" Name="pread"/>
 
-        <phone:WebBrowser x:Name="webBrowser1" Height="760" Width="480" CacheMode="BitmapCache"/>
+        <phone:WebBrowser x:Name="Read_View" Height="760" Width="480" CacheMode="BitmapCache"/>
     </StackPanel>
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" Mode="Minimized">

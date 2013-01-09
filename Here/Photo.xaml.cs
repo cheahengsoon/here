@@ -8,18 +8,16 @@ using System.Windows.Navigation;
 using System.Windows.Resources;
 using Microsoft.Phone.Controls;
 using Microsoft.Xna.Framework.Media;
-using System.Windows.Controls.Primitives;
 
 namespace Here
 {
     public partial class Photo : PhoneApplicationPage
     {
-        string photo_message = "Теперь это фото есть в галерее!";
+        StringConst Strcons = new StringConst();
 
         public Photo()
         {
             InitializeComponent();
-
         }
 
         //Переопределяем OnNavigatedTo для получения параметров и вызова WebBrowser
@@ -29,12 +27,11 @@ namespace Here
             if (NavigationContext.QueryString.ContainsKey("link"))
             {
                 prbarstart();
-                webBrowser1.Navigate(new Uri(NavigationContext.QueryString["link"].ToString(), UriKind.RelativeOrAbsolute));
-                webBrowser1.LoadCompleted += new LoadCompletedEventHandler(webBrowser1_LoadCompleted);
-
+                FhotoView.Navigate(new Uri(NavigationContext.QueryString["link"].ToString(), UriKind.RelativeOrAbsolute));
+                FhotoView.LoadCompleted += new LoadCompletedEventHandler(FhotoView_LoadCompleted);
             }
         }
-        void webBrowser1_LoadCompleted(object sender, NavigationEventArgs e)
+        void FhotoView_LoadCompleted(object sender, NavigationEventArgs e)
         {
             prbarstop();
         }
@@ -46,17 +43,11 @@ namespace Here
         }
         public void prbarstop()
         {
-            pread.Visibility = System.Windows.Visibility.Collapsed;
+            pread.Visibility = Visibility.Collapsed;
             pread.IsIndeterminate = false;
         }
 
         private void SaveFoto(object sender, EventArgs e)
-        {
-            LoadSaveImage();
-        }
-
-
-        void LoadSaveImage()
         {
             prbarstart();
             string DatePicker = NavigationContext.QueryString["BigImage"].ToString();
@@ -68,35 +59,25 @@ namespace Here
         void WebClientOpenReadCompleted(object sender, OpenReadCompletedEventArgs e)
         {
             const string tempJpeg = "TempJPEG";
-            var streamResourceInfo = new StreamResourceInfo(e.Result, null);
-
-            var userStoreForApplication = IsolatedStorageFile.GetUserStoreForApplication();
+                var streamResourceInfo = new StreamResourceInfo(e.Result, null);
+                var userStoreForApplication = IsolatedStorageFile.GetUserStoreForApplication();
             if (userStoreForApplication.FileExists(tempJpeg))
             {
                 userStoreForApplication.DeleteFile(tempJpeg);
             }
-
-            var isolatedStorageFileStream = userStoreForApplication.CreateFile(tempJpeg);
-            var bitmapImage = new BitmapImage { CreateOptions = BitmapCreateOptions.None };
+                var isolatedStorageFileStream = userStoreForApplication.CreateFile(tempJpeg);
+                var bitmapImage = new BitmapImage { CreateOptions = BitmapCreateOptions.None };
             bitmapImage.SetSource(streamResourceInfo.Stream);
-
-            var writeableBitmap = new WriteableBitmap(bitmapImage);
+                var writeableBitmap = new WriteableBitmap(bitmapImage);
             writeableBitmap.SaveJpeg(isolatedStorageFileStream, writeableBitmap.PixelWidth, writeableBitmap.PixelHeight, 0, 85);
-
             isolatedStorageFileStream.Close();
             isolatedStorageFileStream = userStoreForApplication.OpenFile(tempJpeg, FileMode.Open, FileAccess.Read);
-
-            var mediaLibarary = new MediaLibrary();
-
-            mediaLibarary.SavePicture(string.Format("Here_Picture{0}.jpg", DateTime.Now), isolatedStorageFileStream);
-
+                var mediaLibarary = new MediaLibrary();
+            mediaLibarary.SavePicture(string.Format("Here_Pic{0}.jpg", DateTime.Now), isolatedStorageFileStream);
             isolatedStorageFileStream.Close();
-
-            MessageBox.Show(photo_message);
             prbarstop();
+            MessageBox.Show(Strcons.photo_message);            
         }
-
-
 
     }
 }

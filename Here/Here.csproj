@@ -138,7 +138,7 @@
     <Content Include="stas-kulesh-app-icon.png" />
     <Content Include="pics\twitter.png" />
     <Content Include="pics\youtube.png" />
-    <Content Include="PanoramaBackground.png" />
+    <Resource Include="PanoramaBackground.png" />
     <Resource Include="SplashScreen.jpg" />
   </ItemGroup>
   <ItemGroup>

@@ -74,8 +74,6 @@ namespace Here
         void ParseRSSAndBindData(string RSSText)
         {
             XElement rssnz = XElement.Parse(RSSText);
-            XNamespace ns = "http://search.yahoo.com/mrss/";
-
             var nzpost =
                 (from post in rssnz.Descendants("item")
                  select new PostMessage
@@ -109,7 +107,6 @@ namespace Here
         {
             XElement rssnz = XElement.Parse(RSSText);
             XNamespace ns = "http://search.yahoo.com/mrss/";
-
             RssFLK.ItemsSource = from post in rssnz.Descendants("item")
                                  select new PostMessageFL
                                  {
@@ -119,7 +116,7 @@ namespace Here
                                      BigImage = post.Element(ns + "content").Attribute("url").Value
                                  };
         }
-        
+
         //открытие статьи. + передача параметров в read.xaml
         private void RssAll_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {

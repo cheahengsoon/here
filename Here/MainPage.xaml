@@ -20,6 +20,7 @@
     tilteffect:TiltEffect.IsTiltEnabled="True">
 
     <phone:PhoneApplicationPage.Resources>
+        
         <Style TargetType="TextBlock" x:Key="AboutTextBox">
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="Height" Value="40"/>
@@ -28,11 +29,13 @@
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
+        
         <Style TargetType="Image" x:Key="SocImage">
             <Setter Property="Height" Value="70"/>
             <Setter Property="Width" Value="70"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
+        
         <Style TargetType="Line" x:Key="CLine">
             <Setter Property="Height" Value="50"/>
             <Setter Property="Width" Value="17"/>
@@ -49,7 +52,7 @@
         <controls:Panorama Title="Здесь в..." Margin="0" FontSize="140">
             <controls:Panorama.TitleTemplate>
                 <DataTemplate>
-                    
+
                     <TextBlock Text="Здесь в..."
                    FontSize="70" Foreground="White"
                    Margin="0,50,0,0"/>
@@ -63,7 +66,6 @@
             <controls:PanoramaItem  Width="440">
                 <ListBox Name="RssAll" Tap="RssAll_Tap" Width="434" Height="723" local:ListAnimation.IsPivotAnimated="True" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,-6,0">
                     <ListBox.ItemTemplate>
-
                         <DataTemplate>
                             <StackPanel>
                                 <TextBlock Text=" " FontSize="10"/>
