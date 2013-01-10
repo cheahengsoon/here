@@ -129,6 +129,7 @@ namespace Here
             var apptile = ShellTile.ActiveTiles.First();
             var appTileData = new StandardTileData();
             appTileData.Title = Strcons.Tile_title;
+            appTileData.Count = 0;
             appTileData.BackgroundImage = new Uri("/stas-kulesh-app-icon.png", UriKind.RelativeOrAbsolute);
             apptile.Update(appTileData);
         }

@@ -65,6 +65,7 @@ namespace HereTask
                     var tile = ShellTile.ActiveTiles.First();
                     var apptile = new StandardTileData();
                     apptile.Title = "Здесь в...";
+                    apptile.Count = 1;
                     apptile.BackgroundImage = new Uri("/stas-kulesh-app-icon.png", UriKind.RelativeOrAbsolute);
                     apptile.BackContent = nameData;
                     tile.Update(apptile);
