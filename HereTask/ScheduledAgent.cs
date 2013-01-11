@@ -66,7 +66,7 @@ namespace HereTask
                     var apptile = new StandardTileData();
                     apptile.Title = "Здесь в...";
                     apptile.Count = 1;
-                    apptile.BackgroundImage = new Uri("/stas-kulesh-app-icon.png", UriKind.RelativeOrAbsolute);
+                    apptile.BackgroundImage = new Uri("/TilePic.png", UriKind.RelativeOrAbsolute);
                     apptile.BackContent = nameData;
                     tile.Update(apptile);
                 }
@@ -76,7 +76,7 @@ namespace HereTask
             }
             finally
             {
-               NotifyComplete();
+                NotifyComplete();
             }
         }
 

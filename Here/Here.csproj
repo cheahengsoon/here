@@ -135,9 +135,9 @@
     <Content Include="pics\facebook.png" />
     <Content Include="pics\google.png" />
     <Content Include="pics\linkedin.png" />
-    <Content Include="stas-kulesh-app-icon.png" />
     <Content Include="pics\twitter.png" />
     <Content Include="pics\youtube.png" />
+    <Content Include="TilePic.png" />
     <Resource Include="PanoramaBackground.png" />
     <Resource Include="SplashScreen.jpg" />
   </ItemGroup>

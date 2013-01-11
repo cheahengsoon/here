@@ -1,7 +1,7 @@
 <MarketplaceDetails>
-  <SmallAppTile>stas-kulesh-app-iconsmall.png</SmallAppTile>
-  <LargeAppTile>stas-kulesh-app-iconlr.png</LargeAppTile>
-  <PCAppTile>stas-kulesh-app-iconmarketplace.png</PCAppTile>
+  <SmallAppTile>TilePic99.png</SmallAppTile>
+  <LargeAppTile>TilePic173.png</LargeAppTile>
+  <PCAppTile>TilePic200.png</PCAppTile>
   <ScreenShots>MainPage.png;ReadPost.png;main8.png;;;;;;</ScreenShots>
   <ScreenShotsWXGA>;;;;;;;;</ScreenShotsWXGA>
   <ScreenShots720P>;;;;;;;;</ScreenShots720P>
