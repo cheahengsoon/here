@@ -1,8 +1,8 @@
-﻿<xapCache source="C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Release\Here.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="11.01.2013 11:59:30">
+﻿<xapCache source="C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Release\Here.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="11.01.2013 13:33:18">
   <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Release\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="11.01.2013 11:59:29" />
   <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\TilePic.png" archivePath="TilePic.png" lastWriteTime="11.01.2013 10:57:44" />
   <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="11.01.2013 11:21:28" />
-  <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\obj\Release\Here.dll" archivePath="Here.dll" lastWriteTime="11.01.2013 11:59:29" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\obj\Release\Here.dll" archivePath="Here.dll" lastWriteTime="11.01.2013 13:33:17" />
   <file source="C:\Users\usanov_aa\Documents\GitHub\here\HereTask\Bin\Release\HereTask.dll" archivePath="HereTask.dll" lastWriteTime="11.01.2013 11:59:28" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="15.09.2011 16:36:26" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.0\Toolkit\Feb11\Bin\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="17.02.2011 16:27:04" />
