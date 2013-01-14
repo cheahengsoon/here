@@ -106,8 +106,6 @@ C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\HereTask.dll
 C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.dll
 C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\HereTask.pdb
 C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.xml
-C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
-C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
 C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\Here.csprojResolveAssemblyReference.cache
 C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\App.g.cs
 C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\ASplashScreen.g.cs

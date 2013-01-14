@@ -10,7 +10,6 @@ C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\HereTask\obj\Debug
 C:\Users\usanov_aa\Documents\Visual Studio 2010\Projects\Here\HereTask\obj\Debug\HereTask.pdb
 C:\Users\Алексей\Documents\GitHub\here\HereTask\Bin\Debug\HereTask.dll
 C:\Users\Алексей\Documents\GitHub\here\HereTask\Bin\Debug\HereTask.pdb
-C:\Users\Алексей\Documents\GitHub\here\HereTask\obj\Debug\HereTask.csprojResolveAssemblyReference.cache
 C:\Users\Алексей\Documents\GitHub\here\HereTask\obj\Debug\HereTask.dll
 C:\Users\Алексей\Documents\GitHub\here\HereTask\obj\Debug\HereTask.pdb
 C:\Users\usanov_aa\Documents\GitHub\here\HereTask\Bin\Debug\HereTask.dll

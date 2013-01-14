@@ -84,7 +84,6 @@
     <Compile Include="Photo.xaml.cs">
       <DependentUpon>Photo.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PostMessageFL.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

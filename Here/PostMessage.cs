@@ -9,5 +9,6 @@ namespace Here
         public DateTime pubDate { get; set; }
         public string link { get; set; }
         public string titler { get; set; }
+        public string BigImage { get; set; }
     }
 }

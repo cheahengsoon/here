@@ -44,8 +44,7 @@ namespace Here
             }
             catch
             {
-                // MessageBox.Show("Error during registration of Periodic task");
-            }
+                }
 
             if (isPageNew)
             {
@@ -108,9 +107,8 @@ namespace Here
             XElement rssnz = XElement.Parse(RSSText);
             XNamespace ns = "http://search.yahoo.com/mrss/";
             RssFLK.ItemsSource = from post in rssnz.Descendants("item")
-                                 select new PostMessageFL
+                                 select new PostMessage
                                  {
-                                     ImageSource = post.Element(ns + "thumbnail").Attribute("url").Value,
                                      title = post.Element("title").Value,
                                      link = post.Element("link").Value,
                                      BigImage = post.Element(ns + "content").Attribute("url").Value
@@ -159,7 +157,7 @@ namespace Here
 
         private void RssFLK_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Photo.xaml?link=" + ((PostMessageFL)(RssFLK.SelectedItem)).link + "&BigImage=" + ((PostMessageFL)(RssFLK.SelectedItem)).BigImage, UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Photo.xaml?link=" + ((PostMessage)(RssFLK.SelectedItem)).link + "&BigImage=" + ((PostMessage)(RssFLK.SelectedItem)).BigImage, UriKind.Relative));
         }
 
         private void RunBackroundWorker()
