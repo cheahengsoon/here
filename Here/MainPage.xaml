@@ -80,8 +80,8 @@
                 </ListBox>
             </controls:PanoramaItem>
 
-            <controls:PanoramaItem Width="440" Height="723" Margin="0" FontSize="120" Foreground="White">
-                <ListBox Name="RssFLK" Tap="RssFLK_Tap" Height="723" CacheMode="BitmapCache" >
+            <controls:PanoramaItem Width="440" Height="723" Margin="0">
+                <ListBox Name="RssFLK" Tap="RssFLK_Tap" Height="723">
 
                     <ListBox.ItemsPanel>
                         <ItemsPanelTemplate>
@@ -93,7 +93,7 @@
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
                                 <Border Margin="1"  BorderThickness="7" BorderBrush="White">
-                                    <Image Source="{Binding ImageSource}" Width="190" Height="190"/>
+                                    <Image Source="{Binding BigImage}" Width="190" Height="190" CacheMode="BitmapCache"/>
                                 </Border>
                             </StackPanel>
                         </DataTemplate>
