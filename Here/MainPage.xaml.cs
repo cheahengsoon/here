@@ -44,7 +44,7 @@ namespace Here
             }
             catch
             {
-                }
+            }
 
             if (isPageNew)
             {
@@ -54,7 +54,6 @@ namespace Here
                 client.DownloadStringAsync(new Uri(Strcons.RSS));
                 isPageNew = false;
             }
-
         }
 
         void client_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)

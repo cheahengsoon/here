@@ -13,13 +13,11 @@ namespace HereTask
         public const string RSS = "http://feeds.feedburner.com/kulesh?format=xml";
         private static volatile bool _classInitialized;
 
-        /// ScheduledAgent constructor, initializes the UnhandledException handler
         public ScheduledAgent()
         {
             if (!_classInitialized)
             {
                 _classInitialized = true;
-                // Subscribe to the managed exception handler
                 Deployment.Current.Dispatcher.BeginInvoke(delegate
                 {
                     Application.Current.UnhandledException += ScheduledAgent_UnhandledException;
@@ -65,7 +63,6 @@ namespace HereTask
                     var tile = ShellTile.ActiveTiles.First();
                     var apptile = new StandardTileData();
                     apptile.Title = "Здесь в...";
-                    apptile.Count = 1;
                     apptile.BackgroundImage = new Uri("/TilePic.png", UriKind.RelativeOrAbsolute);
                     apptile.BackContent = nameData;
                     tile.Update(apptile);
@@ -79,6 +76,5 @@ namespace HereTask
                 NotifyComplete();
             }
         }
-
     }
 }
