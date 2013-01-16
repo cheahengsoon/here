@@ -17,7 +17,7 @@ namespace Here
     {
         StringConst Strcons = new StringConst();
         BackgroundWorker backroundWorker;
-        bool isPageNew;
+        bool isPageNew = true;
         Popup myPopup;
 
         public MainPage()
@@ -26,7 +26,6 @@ namespace Here
             myPopup = new Popup() { IsOpen = true, Child = new ASplashScreen() };
             backroundWorker = new BackgroundWorker();
             RunBackroundWorker();
-            isPageNew = true;
             Loaded += new RoutedEventHandler(MainPage_Loaded);
             TileUpdate();
         }
