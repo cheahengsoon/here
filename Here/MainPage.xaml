@@ -49,13 +49,13 @@
 
 
         <!--Panorama control-->
-        <controls:Panorama Title="Здесь в..." Margin="0" FontSize="140">
+        <controls:Panorama Title="Здесь в..." Margin="0,0,0,0" FontSize="140">
             <controls:Panorama.TitleTemplate>
                 <DataTemplate>
 
                     <TextBlock Text="Здесь в..."
                    FontSize="70" Foreground="White"
-                   Margin="0,50,0,0"/>
+                   Margin="0,0,0,0"/>
                 </DataTemplate>
             </controls:Panorama.TitleTemplate>
             <controls:Panorama.Background>
@@ -64,8 +64,7 @@
             </controls:Panorama.Background>
             <!--Panorama item one-->
             <controls:PanoramaItem  Width="440">
-                <ListBox Name="RssAll" Tap="RssAll_Tap" Width="434" Height="723" local:ListAnimation.IsPivotAnimated="True" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,-6,0">
-
+                <ListBox Name="RssAll" Tap="RssAll_Tap" Width="434" Height="723" local:ListAnimation.IsPivotAnimated="True" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0">
 
                     <ListBox.ItemTemplate>
                         <DataTemplate>
@@ -122,7 +121,7 @@
 
                     <TextBlock Height="110" Margin="12,0,12,0" Name="textBox7" Text="" Width="400" />
                     <TextBlock Style="{StaticResource AboutTextBox}" Width="130" Text="Оценить!" Name="Rate" Tap="SocTap"/>
-                    <TextBlock Style="{StaticResource AboutTextBox}" Name="textBox5" Text="Версия: 1.5" Width="130" Tap="MailSend"/>
+                    <TextBlock Style="{StaticResource AboutTextBox}" Name="textBox5" Text="Версия: 1.6" Width="130" Tap="MailSend"/>
                     <TextBlock Style="{StaticResource AboutTextBox}" Name="textBox20" Text="Автор блога: Стас Кулеш" Width="302" Tap="MailSend" />
                     <TextBlock Style="{StaticResource AboutTextBox}" Name="textBox8" Text="Разработчик: Алексей Усанов" Width="370" Tap="MailSend" />
 

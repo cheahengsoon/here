@@ -43,6 +43,7 @@ namespace Here
             }
             catch
             {
+
             }
 
             if (isPageNew)
