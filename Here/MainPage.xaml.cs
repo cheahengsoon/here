@@ -45,7 +45,12 @@ namespace Here
             {
 
             }
+            RSSDownload();
+            FlickrLoad();
+        }
 
+        void RSSDownload()
+        {
             if (isPageNew)
             {
                 WebClient client = new WebClient();
@@ -55,7 +60,6 @@ namespace Here
                 isPageNew = false;
             }
         }
-
         void client_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
             if (e.Error == null)
@@ -82,7 +86,7 @@ namespace Here
                  });
 
             RssAll.ItemsSource = nzpost;
-            FlickrLoad();
+
         }
 
         public void FlickrLoad()
@@ -161,6 +165,7 @@ namespace Here
 
         private void RunBackroundWorker()
         {
+           
             backroundWorker.DoWork += ((s, args) =>
                 {
                     Thread.Sleep(10000);

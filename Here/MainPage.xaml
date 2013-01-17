@@ -46,16 +46,13 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
 
-
-
         <!--Panorama control-->
-        <controls:Panorama Title="Здесь в..." Margin="0,0,0,0" FontSize="140">
+        <controls:Panorama Title="Здесь в..." FontSize="140">
             <controls:Panorama.TitleTemplate>
                 <DataTemplate>
-
                     <TextBlock Text="Здесь в..."
                    FontSize="70" Foreground="White"
-                   Margin="0,0,0,0"/>
+                   Margin="0,60,0,0"/>
                 </DataTemplate>
             </controls:Panorama.TitleTemplate>
             <controls:Panorama.Background>
