@@ -16,3 +16,4 @@ C:\Users\usanov_aa\Documents\GitHub\here\HereTask\Bin\Debug\HereTask.dll
 C:\Users\usanov_aa\Documents\GitHub\here\HereTask\Bin\Debug\HereTask.pdb
 C:\Users\usanov_aa\Documents\GitHub\here\HereTask\obj\Debug\HereTask.dll
 C:\Users\usanov_aa\Documents\GitHub\here\HereTask\obj\Debug\HereTask.pdb
+C:\Users\Алексей\Documents\GitHub\here\HereTask\obj\Debug\HereTask.csprojResolveAssemblyReference.cache

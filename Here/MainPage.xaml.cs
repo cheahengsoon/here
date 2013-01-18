@@ -25,12 +25,12 @@ namespace Here
             InitializeComponent();
             myPopup = new Popup() { IsOpen = true, Child = new ASplashScreen() };
             backroundWorker = new BackgroundWorker();
-            RunBackroundWorker();
             Loaded += new RoutedEventHandler(MainPage_Loaded);
-            TileUpdate();
+            RunBackroundWorker();
+            
         }
 
-        //загрузка xml и парсинг
+        
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
             PeriodicTask periodicTask = new PeriodicTask(Strcons.Task_description)
@@ -45,8 +45,10 @@ namespace Here
             {
 
             }
+
             RSSDownload();
             FlickrLoad();
+            TileUpdate();
         }
 
         void RSSDownload()
@@ -86,7 +88,6 @@ namespace Here
                  });
 
             RssAll.ItemsSource = nzpost;
-
         }
 
         public void FlickrLoad()
@@ -164,8 +165,7 @@ namespace Here
         }
 
         private void RunBackroundWorker()
-        {
-           
+        {          
             backroundWorker.DoWork += ((s, args) =>
                 {
                     Thread.Sleep(10000);

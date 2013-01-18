@@ -61,7 +61,7 @@
             </controls:Panorama.Background>
             <!--Panorama item one-->
             <controls:PanoramaItem  Width="440">
-                <ListBox Name="RssAll" Tap="RssAll_Tap" Width="434" Height="723" local:ListAnimation.IsPivotAnimated="True" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0">
+                <ListBox Name="RssAll" Tap="RssAll_Tap" Width="430" Height="725" local:ListAnimation.IsPivotAnimated="True" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0">
 
                     <ListBox.ItemTemplate>
                         <DataTemplate>
@@ -78,7 +78,7 @@
                 </ListBox>
             </controls:PanoramaItem>
 
-            <controls:PanoramaItem Width="440" Height="723" Margin="0">
+            <controls:PanoramaItem Width="440" Height="723" Margin="0,0,0,0">
                 <ListBox Name="RssFLK" Tap="RssFLK_Tap" Height="723">
 
                     <ListBox.ItemsPanel>
