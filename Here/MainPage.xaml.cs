@@ -27,10 +27,9 @@ namespace Here
             backroundWorker = new BackgroundWorker();
             Loaded += new RoutedEventHandler(MainPage_Loaded);
             RunBackroundWorker();
-            
+
         }
 
-        
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
             PeriodicTask periodicTask = new PeriodicTask(Strcons.Task_description)
@@ -43,7 +42,6 @@ namespace Here
             }
             catch
             {
-
             }
 
             RSSDownload();
@@ -62,6 +60,7 @@ namespace Here
                 isPageNew = false;
             }
         }
+
         void client_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
             if (e.Error == null)
@@ -165,7 +164,7 @@ namespace Here
         }
 
         private void RunBackroundWorker()
-        {          
+        {
             backroundWorker.DoWork += ((s, args) =>
                 {
                     Thread.Sleep(10000);
