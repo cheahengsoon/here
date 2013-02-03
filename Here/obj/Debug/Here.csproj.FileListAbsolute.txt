@@ -123,7 +123,6 @@ C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\AppManifest.xaml
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\Here.xap
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\HereTask.dll
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.dll
-C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\HereTask.pdb
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.xml
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
