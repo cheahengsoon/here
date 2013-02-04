@@ -15,6 +15,10 @@ namespace Here
 {
     public partial class MainPage : PhoneApplicationPage
     {
+
+        private static Version TargetedVersion = new Version(7, 10, 8858);
+        public static bool IsTargetedVersion { get { return Environment.OSVersion.Version >= TargetedVersion; } }
+
         StringConst Strcons = new StringConst();
         BackgroundWorker backroundWorker;
         bool isPageNew = true;
@@ -46,7 +50,8 @@ namespace Here
 
             RSSDownload();
             FlickrLoad();
-            TileUpdate();
+           TileUpdate();
+           
         }
 
         void RSSDownload()
@@ -89,6 +94,7 @@ namespace Here
             RssAll.ItemsSource = nzpost;
         }
 
+
         public void FlickrLoad()
         {
             WebClient client = new WebClient();
@@ -124,14 +130,22 @@ namespace Here
             NavigationService.Navigate(new Uri("/Read.xaml?link=" + ((PostMessage)(RssAll.SelectedItem)).link + "&title=" + ((PostMessage)(RssAll.SelectedItem)).title + "&date=" + ((PostMessage)(RssAll.SelectedItem)).pubDate, UriKind.Relative));
         }
 
+
+      
+
+
         //обновление главного tile 
         public void TileUpdate()
         {
+          
+
             var apptile = ShellTile.ActiveTiles.First();
             var appTileData = new StandardTileData();
             appTileData.Title = Strcons.Tile_title;
             appTileData.Count = 0;
             appTileData.BackgroundImage = new Uri("/TilePic.png", UriKind.RelativeOrAbsolute);
+            
+            
             apptile.Update(appTileData);
         }
 

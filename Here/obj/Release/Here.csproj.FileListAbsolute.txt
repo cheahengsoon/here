@@ -79,7 +79,6 @@ C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Release\AppManifest.xaml
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Release\Here.xap
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Release\HereTask.dll
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Release\Microsoft.Phone.Controls.dll
-C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Release\HereTask.pdb
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Release\Microsoft.Phone.Controls.xml
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Release\Microsoft.Phone.Controls.Toolkit.pdb
