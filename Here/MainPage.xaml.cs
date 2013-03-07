@@ -16,26 +16,25 @@ namespace Here
     public partial class MainPage : PhoneApplicationPage
     {
 
-        private static Version TargetedVersion = new Version(7, 10, 8858);
-        public static bool IsTargetedVersion { get { return Environment.OSVersion.Version >= TargetedVersion; } }
-
         StringConst Strcons = new StringConst();
         BackgroundWorker backroundWorker;
         bool isPageNew = true;
+        bool isSwitch = true;
         Popup myPopup;
 
         public MainPage()
         {
             InitializeComponent();
-            myPopup = new Popup() { IsOpen = true, Child = new ASplashScreen() };
-            backroundWorker = new BackgroundWorker();
-            Loaded += new RoutedEventHandler(MainPage_Loaded);
-            RunBackroundWorker();
-
+            myPopup = new Popup() { IsOpen = true, Child = new ASplashScreen() };            
+            this.Loaded += MainPage_Loaded;
+            
         }
 
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
+            
+            backroundWorker = new BackgroundWorker();
+
             PeriodicTask periodicTask = new PeriodicTask(Strcons.Task_description)
         {
             Description = Strcons.Task_description
@@ -45,24 +44,21 @@ namespace Here
                 ScheduledActionService.Add(periodicTask);
             }
             catch
-            {
-            }
+            { }
 
-            RSSDownload();
-            FlickrLoad();
-           TileUpdate();
-           
+            RunBackroundWorker();
+            RSSDWN(Strcons.RSS);
+            RSSDWN(Strcons.FLICKR);
+            TileUpdate(Strcons.Tile_title);
         }
 
-        void RSSDownload()
+        void RSSDWN(string RSSName)
         {
             if (isPageNew)
             {
                 WebClient client = new WebClient();
-                client.DownloadStringCompleted += new
-                DownloadStringCompletedEventHandler(client_DownloadStringCompleted);
-                client.DownloadStringAsync(new Uri(Strcons.RSS));
-                isPageNew = false;
+                client.DownloadStringCompleted += new DownloadStringCompletedEventHandler(client_DownloadStringCompleted);
+                client.DownloadStringAsync(new Uri(RSSName));
             }
         }
 
@@ -81,47 +77,36 @@ namespace Here
 
         void ParseRSSAndBindData(string RSSText)
         {
-            XElement rssnz = XElement.Parse(RSSText);
-            var nzpost =
-                (from post in rssnz.Descendants("item")
-                 select new PostMessage
-                 {
-                     title = post.Element("title").Value,
-                     pubDate = DateTime.Parse(post.Element("pubDate").Value),
-                     link = post.Element("link").Value
-                 });
 
-            RssAll.ItemsSource = nzpost;
-        }
-
-
-        public void FlickrLoad()
-        {
-            WebClient client = new WebClient();
-            client.DownloadStringCompleted += new
-            DownloadStringCompletedEventHandler(flickr_DownloadStringCompleted);
-            client.DownloadStringAsync(new Uri(Strcons.FLICKR));
-        }
-
-        void flickr_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
-        {
-            if (e.Error == null)
+            if (isSwitch == true)
             {
-                ParseflickrAndBindData(e.Result);
+                XElement rssnz = XElement.Parse(RSSText);
+                var nzpost = (from post in rssnz.Descendants("item")
+                              select new PostMessage
+                              {
+                                  title = post.Element("title").Value,
+                                  pubDate = DateTime.Parse(post.Element("pubDate").Value),
+                                  link = post.Element("link").Value
+                              });
+                RssAll.ItemsSource = nzpost;
+                isSwitch = false;
             }
-        }
-
-        void ParseflickrAndBindData(string RSSText)
-        {
-            XElement rssnz = XElement.Parse(RSSText);
-            XNamespace ns = "http://search.yahoo.com/mrss/";
-            RssFLK.ItemsSource = from post in rssnz.Descendants("item")
-                                 select new PostMessage
-                                 {
-                                     title = post.Element("title").Value,
-                                     link = post.Element("link").Value,
-                                     BigImage = post.Element(ns + "content").Attribute("url").Value
-                                 };
+            else
+            {
+                XElement rssnz = XElement.Parse(RSSText);
+                XNamespace ns = "http://search.yahoo.com/mrss/";
+                var nzpost = (from post in rssnz.Descendants("item")
+                              select new PostMessage
+                              {
+                                  title = post.Element("title").Value,
+                                  pubDate = DateTime.Parse(post.Element("pubDate").Value),
+                                  link = post.Element("link").Value,
+                                  BigImage = post.Element(ns + "content").Attribute("url").Value
+                              });
+                RssFLK.ItemsSource = nzpost;
+                isSwitch = true;
+                isPageNew = false;
+            }
         }
 
         //открытие статьи. + передача параметров в read.xaml
@@ -130,22 +115,14 @@ namespace Here
             NavigationService.Navigate(new Uri("/Read.xaml?link=" + ((PostMessage)(RssAll.SelectedItem)).link + "&title=" + ((PostMessage)(RssAll.SelectedItem)).title + "&date=" + ((PostMessage)(RssAll.SelectedItem)).pubDate, UriKind.Relative));
         }
 
-
-      
-
-
         //обновление главного tile 
-        public void TileUpdate()
+        public void TileUpdate(string TitleTile)
         {
-          
-
             var apptile = ShellTile.ActiveTiles.First();
             var appTileData = new StandardTileData();
-            appTileData.Title = Strcons.Tile_title;
+            appTileData.Title = TitleTile;
             appTileData.Count = 0;
             appTileData.BackgroundImage = new Uri("/TilePic.png", UriKind.RelativeOrAbsolute);
-            
-            
             apptile.Update(appTileData);
         }
 
@@ -181,7 +158,7 @@ namespace Here
         {
             backroundWorker.DoWork += ((s, args) =>
                 {
-                    Thread.Sleep(10000);
+                    Thread.Sleep(3000);
                 });
 
             backroundWorker.RunWorkerCompleted += ((s, args) =>

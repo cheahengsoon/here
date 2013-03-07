@@ -6,10 +6,7 @@ using System.Windows.Media;
 
 namespace LinqToVisualTree
 {
-    /// <summary>
-    /// Adapts a DependencyObject to provide methods required for generate
-    /// a Linq To Tree API
-    /// </summary>
+  
     public class VisualTreeAdapter : ILinqTree<DependencyObject>
     {
         private DependencyObject _item;

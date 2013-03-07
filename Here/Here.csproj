@@ -124,6 +124,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Here_2013_03_07_14_53_27.sap" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
