@@ -116,8 +116,6 @@ C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\Here.g.resources
 C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\Here.dll
 C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\Here.pdb
 C:\Users\Алексей\Documents\GitHub\here\Here\obj\Debug\XapCacheFile.xml
-C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
-C:\Users\Алексей\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\ApplicationIcon.png
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\Here.dll
 C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\Here.pdb

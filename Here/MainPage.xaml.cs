@@ -15,26 +15,33 @@ namespace Here
 {
     public partial class MainPage : PhoneApplicationPage
     {
-
         StringConst Strcons = new StringConst();
         BackgroundWorker backroundWorker;
         bool isPageNew = true;
         bool isSwitch = true;
         Popup myPopup;
 
+        private BackgroundWorker rss = new BackgroundWorker();
+
         public MainPage()
         {
             InitializeComponent();
-            myPopup = new Popup() { IsOpen = true, Child = new ASplashScreen() };            
+            myPopup = new Popup() { IsOpen = true, Child = new ASplashScreen() };
             this.Loaded += MainPage_Loaded;
-            
+            rss.RunWorkerCompleted += new RunWorkerCompletedEventHandler(rss_RunWorkerCompleted);
+        }
+
+        private void rss_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            RSSDWN(Strcons.RSS);
+            RSSDWN(Strcons.FLICKR);
         }
 
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            
+            rss.RunWorkerAsync();
+            TileUpdate(Strcons.Tile_title);
             backroundWorker = new BackgroundWorker();
-
             PeriodicTask periodicTask = new PeriodicTask(Strcons.Task_description)
         {
             Description = Strcons.Task_description
@@ -45,11 +52,7 @@ namespace Here
             }
             catch
             { }
-
             RunBackroundWorker();
-            RSSDWN(Strcons.RSS);
-            RSSDWN(Strcons.FLICKR);
-            TileUpdate(Strcons.Tile_title);
         }
 
         void RSSDWN(string RSSName)
@@ -77,7 +80,6 @@ namespace Here
 
         void ParseRSSAndBindData(string RSSText)
         {
-
             if (isSwitch == true)
             {
                 XElement rssnz = XElement.Parse(RSSText);
@@ -108,13 +110,11 @@ namespace Here
                 isPageNew = false;
             }
         }
-
         //открытие статьи. + передача параметров в read.xaml
         private void RssAll_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Read.xaml?link=" + ((PostMessage)(RssAll.SelectedItem)).link + "&title=" + ((PostMessage)(RssAll.SelectedItem)).title + "&date=" + ((PostMessage)(RssAll.SelectedItem)).pubDate, UriKind.Relative));
         }
-
         //обновление главного tile 
         public void TileUpdate(string TitleTile)
         {
@@ -125,7 +125,6 @@ namespace Here
             appTileData.BackgroundImage = new Uri("/TilePic.png", UriKind.RelativeOrAbsolute);
             apptile.Update(appTileData);
         }
-
         //обработка тапов по иконкам соцсетей
         private void SocTap(object sender, System.Windows.Input.GestureEventArgs e)
         {
@@ -158,7 +157,7 @@ namespace Here
         {
             backroundWorker.DoWork += ((s, args) =>
                 {
-                    Thread.Sleep(3000);
+                    Thread.Sleep(5000);
                 });
 
             backroundWorker.RunWorkerCompleted += ((s, args) =>
