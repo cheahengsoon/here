@@ -20,7 +20,6 @@ namespace Here
         bool isPageNew = true;
         bool isSwitch = true;
         Popup myPopup;
-
         private BackgroundWorker rss = new BackgroundWorker();
 
         public MainPage()
@@ -28,7 +27,6 @@ namespace Here
             InitializeComponent();
             myPopup = new Popup() { IsOpen = true, Child = new ASplashScreen() };
             this.Loaded += MainPage_Loaded;
-            rss.RunWorkerCompleted += new RunWorkerCompletedEventHandler(rss_RunWorkerCompleted);
         }
 
         private void rss_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -39,6 +37,7 @@ namespace Here
 
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
+            rss.RunWorkerCompleted += new RunWorkerCompletedEventHandler(rss_RunWorkerCompleted);
             rss.RunWorkerAsync();
             TileUpdate(Strcons.Tile_title);
             backroundWorker = new BackgroundWorker();
