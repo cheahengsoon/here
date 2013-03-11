@@ -18,11 +18,11 @@
         </Image>
         <ProgressBar IsIndeterminate="True" Foreground="White" VerticalAlignment="Center" Height="40" Margin="0,757,0,3" />
         <TextBlock Text="Здесь в..." Foreground="White" FontSize="72" Margin="90,90,90,591" />
-        <TextBlock Text="Подождите..." Foreground="White" Height="40" Width="120" Margin="180,711,164,50" />
+        <TextBlock Text="Загружаю..." Foreground="White" Height="40" Width="120" Margin="180,711,164,50" />
     </Grid>
 
 
-    <UserControl.Resources>
+    <!--<UserControl.Resources>
         <Storyboard x:Key="flippingAnimation">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)"
                                            Storyboard.TargetName="logoName">
@@ -31,7 +31,7 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="360"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-    </UserControl.Resources>
+    </UserControl.Resources>-->
 </UserControl>
     
     
