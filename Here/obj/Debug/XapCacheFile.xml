@@ -1,9 +1,9 @@
-﻿<xapCache source="C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\Here.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="11.03.2013 15:59:19">
+﻿<xapCache source="C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\Here.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="12.03.2013 14:11:17">
   <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="04.02.2013 7:52:39" />
   <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\TilePic.png" archivePath="TilePic.png" lastWriteTime="11.01.2013 10:57:44" />
   <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="11.10.2012 13:09:32" />
-  <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\obj\Debug\Here.dll" archivePath="Here.dll" lastWriteTime="11.03.2013 15:59:19" />
-  <file source="C:\Users\usanov_aa\Documents\GitHub\here\HereTask\Bin\Debug\HereTask.dll" archivePath="HereTask.dll" lastWriteTime="06.03.2013 12:03:31" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\obj\Debug\Here.dll" archivePath="Here.dll" lastWriteTime="12.03.2013 14:11:16" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\here\HereTask\Bin\Debug\HereTask.dll" archivePath="HereTask.dll" lastWriteTime="12.03.2013 11:40:02" />
   <file source="c:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="19.03.2012 16:29:06" />
   <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="17.02.2011 16:27:04" />
   <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\pics\facebook.png" archivePath="pics\facebook.png" lastWriteTime="09.01.2013 7:38:44" />
@@ -11,6 +11,6 @@
   <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\pics\linkedin.png" archivePath="pics\linkedin.png" lastWriteTime="09.01.2013 7:38:44" />
   <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\pics\twitter.png" archivePath="pics\twitter.png" lastWriteTime="09.01.2013 7:38:44" />
   <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\pics\youtube.png" archivePath="pics\youtube.png" lastWriteTime="09.01.2013 7:38:44" />
-  <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="06.03.2013 12:03:32" />
+  <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12.03.2013 11:40:03" />
   <file source="C:\Users\usanov_aa\Documents\GitHub\here\Here\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="11.10.2012 13:09:32" />
 </xapCache>

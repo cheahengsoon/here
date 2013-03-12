@@ -17,8 +17,7 @@ namespace Here
     {
         StringConst Strcons = new StringConst();
         BackgroundWorker backroundWorker;
-        bool isPageNew = true;
-        bool isSwitch = true;
+        bool isPageNew, isSwitch = true;
         Popup myPopup;
         private BackgroundWorker rss = new BackgroundWorker();
 
@@ -29,18 +28,13 @@ namespace Here
             this.Loaded += MainPage_Loaded;
         }
 
-        private void rss_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            RSSDWN(Strcons.RSS);
-            RSSDWN(Strcons.FLICKR);
-        }
-
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
             rss.RunWorkerCompleted += new RunWorkerCompletedEventHandler(rss_RunWorkerCompleted);
             rss.RunWorkerAsync();
             TileUpdate(Strcons.Tile_title);
-            backroundWorker = new BackgroundWorker();
+            
+          //  RunBackroundWorker();
             PeriodicTask periodicTask = new PeriodicTask(Strcons.Task_description)
         {
             Description = Strcons.Task_description
@@ -51,7 +45,6 @@ namespace Here
             }
             catch
             { }
-            RunBackroundWorker();
         }
 
         void RSSDWN(string RSSName)
@@ -62,6 +55,12 @@ namespace Here
                 client.DownloadStringCompleted += new DownloadStringCompletedEventHandler(client_DownloadStringCompleted);
                 client.DownloadStringAsync(new Uri(RSSName));
             }
+        }
+
+        private void rss_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            RSSDWN(Strcons.RSS);
+            RSSDWN(Strcons.FLICKR);
         }
 
         void client_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
@@ -169,6 +168,7 @@ namespace Here
                 });
             backroundWorker.RunWorkerAsync();
         }
+
         //Message мне
         private void MailSend(object sender, System.Windows.Input.GestureEventArgs e)
         {

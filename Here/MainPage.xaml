@@ -118,7 +118,7 @@
 
                     <TextBlock Height="110" Margin="12,0,12,0" Name="textBox7" Text="" Width="400" />
                     <TextBlock Style="{StaticResource AboutTextBox}" Width="144" Text="Оценить!" Name="Rate" Tap="SocTap" FontSize="32" Height="54" />
-                    <TextBlock Style="{StaticResource AboutTextBox}" Name="textBox5" Text="Версия: 1.6" Width="130" Tap="MailSend"/>
+                    <TextBlock Style="{StaticResource AboutTextBox}" Name="textBox5" Text="Версия: 1.5.1" Width="152" Tap="MailSend"/>
                     <TextBlock Style="{StaticResource AboutTextBox}" Name="textBox20" Text="Автор блога: Стас Кулеш" Width="302" Tap="MailSend" />
                     <TextBlock Style="{StaticResource AboutTextBox}" Name="textBox8" Text="Разработчик: Алексей Усанов" Width="370" Tap="MailSend" />
 
