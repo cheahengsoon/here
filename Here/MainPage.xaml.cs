@@ -34,7 +34,7 @@ namespace Here
             rss.RunWorkerAsync();
             TileUpdate(Strcons.Tile_title);
             
-          //  RunBackroundWorker();
+          
             PeriodicTask periodicTask = new PeriodicTask(Strcons.Task_description)
         {
             Description = Strcons.Task_description
@@ -45,6 +45,7 @@ namespace Here
             }
             catch
             { }
+            RunBackroundWorker();
         }
 
         void RSSDWN(string RSSName)
