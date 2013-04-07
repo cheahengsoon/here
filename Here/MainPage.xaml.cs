@@ -2,9 +2,7 @@
 using System.ComponentModel;
 using System.Linq;
 using System.Net;
-using System.Threading;
 using System.Windows;
-using System.Windows.Controls.Primitives;
 using System.Xml.Linq;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Scheduler;
@@ -18,23 +16,24 @@ namespace Here
         StringConst Strcons = new StringConst();
         BackgroundWorker backroundWorker;
         bool isPageNew, isSwitch = true;
-        Popup myPopup;
-        private BackgroundWorker rss = new BackgroundWorker();
 
         public MainPage()
         {
             InitializeComponent();
-            myPopup = new Popup() { IsOpen = true, Child = new ASplashScreen() };
+
             this.Loaded += MainPage_Loaded;
+
         }
 
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            rss.RunWorkerCompleted += new RunWorkerCompletedEventHandler(rss_RunWorkerCompleted);
-            rss.RunWorkerAsync();
+
+            WebClient client = new WebClient();
+            client.DownloadStringCompleted += new DownloadStringCompletedEventHandler(client_DownloadStringCompleted);
+            client.DownloadStringAsync(new Uri(Strcons.RSS));
+
             TileUpdate(Strcons.Tile_title);
-            
-          
+
             PeriodicTask periodicTask = new PeriodicTask(Strcons.Task_description)
         {
             Description = Strcons.Task_description
@@ -45,7 +44,7 @@ namespace Here
             }
             catch
             { }
-            RunBackroundWorker();
+
         }
 
         void RSSDWN(string RSSName)
@@ -55,13 +54,8 @@ namespace Here
                 WebClient client = new WebClient();
                 client.DownloadStringCompleted += new DownloadStringCompletedEventHandler(client_DownloadStringCompleted);
                 client.DownloadStringAsync(new Uri(RSSName));
+                MessageBox.Show("Text");
             }
-        }
-
-        private void rss_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            RSSDWN(Strcons.RSS);
-            RSSDWN(Strcons.FLICKR);
         }
 
         void client_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
@@ -79,7 +73,7 @@ namespace Here
 
         void ParseRSSAndBindData(string RSSText)
         {
-            if (isSwitch == true)
+            if (isSwitch)
             {
                 XElement rssnz = XElement.Parse(RSSText);
                 var nzpost = (from post in rssnz.Descendants("item")
@@ -124,50 +118,10 @@ namespace Here
             appTileData.BackgroundImage = new Uri("/TilePic.png", UriKind.RelativeOrAbsolute);
             apptile.Update(appTileData);
         }
-        //обработка тапов по иконкам соцсетей
-        private void SocTap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            WebBrowserTask cvtap = new WebBrowserTask();
-            if (sender == google)
-                cvtap.Uri = new Uri(Strcons.google_str, UriKind.Absolute);
-            else if (sender == youtube)
-                cvtap.Uri = new Uri(Strcons.youtube_str, UriKind.Absolute);
-            else if (sender == facebook)
-                cvtap.Uri = new Uri(Strcons.facebook_str, UriKind.Absolute);
-            else if (sender == twitter)
-                cvtap.Uri = new Uri(Strcons.twitter_str, UriKind.Absolute);
-            else if (sender == linkedin)
-                cvtap.Uri = new Uri(Strcons.linkedin_str, UriKind.Absolute);
-            else if (sender == staskulesh)
-                cvtap.Uri = new Uri(Strcons.sklink, UriKind.Absolute);
-            else if (sender == Rate)
-            {
-                cvtap.Uri = new Uri(Strcons.ratestr, UriKind.Absolute);
-            }
-            cvtap.Show();
-        }
 
         private void RssFLK_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Photo.xaml?link=" + ((PostMessage)(RssFLK.SelectedItem)).link + "&BigImage=" + ((PostMessage)(RssFLK.SelectedItem)).BigImage, UriKind.Relative));
-        }
-
-        private void RunBackroundWorker()
-        {
-            backroundWorker.DoWork += ((s, args) =>
-                {
-                    Thread.Sleep(5000);
-                });
-
-            backroundWorker.RunWorkerCompleted += ((s, args) =>
-                {
-                    this.Dispatcher.BeginInvoke(() =>
-                        {
-                            this.myPopup.IsOpen = false;
-                        }
-                    );
-                });
-            backroundWorker.RunWorkerAsync();
         }
 
         //Message мне
